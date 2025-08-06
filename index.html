@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourBrand Insurance - Securing India's Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            background-color: #FFFBF5; /* Soft Cream/Ivory */
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Primary color: Deep Teal */
+        .text-brand-primary {
+            color: #005B5B;
+        }
+        .bg-brand-primary {
+            background-color: #005B5B;
+        }
+        /* Accent color: Marigold/Saffron */
+        .text-brand-accent {
+            color: #FFA500;
+        }
+        .bg-brand-accent {
+            background-color: #FFA500;
+        }
+        .border-brand-accent {
+            border-color: #FFA500;
+        }
+        .section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation with enhanced shadow -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-xl">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-poppins text-3xl font-bold tracking-wider text-brand-primary">InsuranCo</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-brand-primary transition duration-300">About Us</a>
+                <a href="#plans" class="text-gray-600 hover:text-brand-primary transition duration-300">Our Plans</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-brand-primary transition duration-300">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-brand-primary transition duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-brand-accent text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition duration-300 shadow-xl">Get a Quote</a>
+            <button id="mobile-menu-button" class="md:hidden text-brand-primary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white border-t border-gray-200">
+             <a href="#about" class="block py-2 text-gray-600 hover:text-brand-primary">About Us</a>
+            <a href="#plans" class="block py-2 text-gray-600 hover:text-brand-primary">Our Plans</a>
+            <a href="#testimonials" class="block py-2 text-gray-600 hover:text-brand-primary">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-brand-primary">Contact</a>
+            <a href="#contact" class="block mt-2 bg-brand-accent text-white text-center font-bold py-2 px-6 rounded-full hover:bg-opacity-90">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 lg:pt-40 lg:pb-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h1 class="font-poppins text-5xl md:text-6xl font-bold text-brand-primary mb-4 leading-tight">Secure Your Tomorrow, Today.</h1>
+                        <p class="text-lg md:text-xl text-gray-600 mb-8">We provide clear, reliable insurance plans that protect Indian families and their dreams. Your peace of mind is our promise.</p>
+                        <a href="#plans" class="bg-brand-accent text-white py-3 px-10 rounded-full text-lg font-bold hover-lift inline-block transition-colors duration-300 shadow-xl">Explore Our Plans</a>
+                    </div>
+                    <!-- Image container updated for visibility -->
+                    <div class="relative h-80 md:h-96">
+                        <img src="https://images.pexels.com/photos/16146955/pexels-photo-16146955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Happy family protected by insurance" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-2xl" onerror="this.onerror=null;this.src='https://placehold.co/1200x600/e2e8f0/4a5568?text=Image+Not+Found';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-20 lg:py-24 section bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-poppins text-4xl font-semibold text-brand-primary mb-3">The InsuranCo Advantage</h2>
+                    <p class="text-gray-600 text-lg">We're more than just an insurance company. We're your partners in security.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Feature 1 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-brand-accent/10 text-brand-accent mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h3 class="font-poppins text-xl font-bold text-brand-primary mb-2">98% Fast Claims</h3>
+                        <p class="text-gray-600">Our streamlined process ensures your claims are settled quickly and without hassle.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-brand-accent/10 text-brand-accent mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v1h8v-1c0-2.21-1.79-4-4-4zm6 4h-2v-1c0-1.33-1.07-2.42-2.42-2.91A5.002 5.002 0 0117 11c1.657 0 3 1.343 3 3s-1.343 3-3 3h-1" /></svg>
+                        </div>
+                        <h3 class="font-poppins text-xl font-bold text-brand-primary mb-2">Plans for Everyone</h3>
+                        <p class="text-gray-600">From individuals to large families, we have a customized plan that fits your life and budget.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-brand-accent/10 text-brand-accent mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                        </div>
+                        <h3 class="font-poppins text-xl font-bold text-brand-primary mb-2">24/7 Support</h3>
+                        <p class="text-gray-600">Our dedicated support team is always available to answer your questions and assist you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="about" class="py-20 lg:py-24 section">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="relative h-80 md:h-96">
+                        <img src="https://images.pexels.com/photos/8112351/pexels-photo-8112351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Our professional insurance team" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-2xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/4a5568?text=Image+Not+Found';">
+                    </div>
+                    <div class="text-left">
+                        <h2 class="font-poppins text-4xl font-semibold text-brand-primary mb-4">A Legacy of Trust</h2>
+                        <p class="text-gray-600 mb-4 text-lg">We are a leading insurance provider dedicated to securing the lives and assets of people across India. Our mission is to deliver reliable, affordable, and accessible insurance products with transparency and exceptional customer service.</p>
+                        <p class="text-gray-600 text-lg">We understand the unique needs of Indian families and businesses, and we are committed to being your dependable partner through all of life's uncertainties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="py-20 lg:py-24 section bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="font-poppins text-4xl font-semibold text-brand-primary mb-3">Comprehensive Coverage</h2>
+                    <p class="text-gray-600 text-lg">Find the perfect plan to protect every aspect of your life.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Plan Card -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden hover-lift">
+                        <div class="p-8">
+                            <h3 class="font-poppins text-2xl font-bold text-brand-primary mb-2">Health Insurance</h3>
+                            <p class="text-gray-600 mb-6">Complete medical coverage for you and your loved ones.</p>
+                            <a href="#contact" class="font-bold text-brand-primary hover:text-brand-accent transition">Learn More &rarr;</a>
+                        </div>
+                        <div class="bg-brand-accent h-2"></div>
+                    </div>
+                    <!-- Plan Card -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden hover-lift">
+                        <div class="p-8">
+                            <h3 class="font-poppins text-2xl font-bold text-brand-primary mb-2">Life Insurance</h3>
+                            <p class="text-gray-600 mb-6">Secure your family's financial future, no matter what happens.</p>
+                            <a href="#contact" class="font-bold text-brand-primary hover:text-brand-accent transition">Learn More &rarr;</a>
+                        </div>
+                        <div class="bg-brand-accent h-2"></div>
+                    </div>
+                    <!-- Plan Card -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden hover-lift">
+                        <div class="p-8">
+                            <h3 class="font-poppins text-2xl font-bold text-brand-primary mb-2">Vehicle Insurance</h3>
+                            <p class="text-gray-600 mb-6">Total protection for your car or bike against all risks.</p>
+                            <a href="#contact" class="font-bold text-brand-primary hover:text-brand-accent transition">Learn More &rarr;</a>
+                        </div>
+                        <div class="bg-brand-accent h-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 lg:py-24 section">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="font-poppins text-4xl font-semibold text-brand-primary mb-3">Trusted by Thousands of Families</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white shadow-xl p-8 rounded-lg">
+                        <p class="text-gray-600 italic mb-4">"The claim process was unbelievably smooth. The InsuranCo team was so supportive during a very stressful time for my family. I can't thank them enough."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Avatar of Priya S.">
+                            <div>
+                                <p class="font-bold text-brand-primary">Priya S.</p>
+                                <p class="text-sm text-gray-500">Bangalore, Karnataka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white shadow-xl p-8 rounded-lg">
+                        <p class="text-gray-600 italic mb-4">"Finally, an insurance company that explains everything clearly. I feel confident that I have the right plan for my business. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Avatar of Rohan M.">
+                            <div>
+                                <p class="font-bold text-brand-primary">Rohan M.</p>
+                                <p class="text-sm text-gray-500">Mumbai, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 lg:py-24 section">
+            <div class="container mx-auto px-6">
+                <div class="bg-brand-primary text-white rounded-lg shadow-2xl p-8 md:p-12">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="text-center md:text-left">
+                            <h2 class="font-poppins text-4xl font-semibold mb-3">Ready to Feel Secure?</h2>
+                            <p class="text-gray-200 text-lg">Let's find the perfect plan for you. Our advisors are ready to help with a free, no-obligation consultation.</p>
+                        </div>
+                        <div class="max-w-md mx-auto w-full">
+                             <form>
+                                <div class="mb-4">
+                                    <input type="text" placeholder="Your Full Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent text-gray-800" required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" placeholder="Your Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent text-gray-800" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="bg-brand-accent text-white py-3 px-10 rounded-full font-bold text-lg hover-lift w-full shadow-xl">Request a Callback</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-center md:text-left">&copy; 2024 InsuranCo. All Rights Reserved.</p>
+                <div class="flex mt-4 md:mt-0 space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple scroll animation
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
